@@ -2,7 +2,7 @@ import { Server } from "socket.io";
 
 function createConnection(server) {
   const io = new Server(server, {
-    cors: { origin: "http://192.168.1.15:5500" },
+    cors: { origin: "*" },
   });
 
   const users = {};
